@@ -8,7 +8,7 @@ const items3 = ['Contact Us', 'Developers', 'Documentation', 'Integrations', 'Re
 
 <template>
   <div>
-    <VRow style="margin: 10%;">
+    <VRow>
       <VCol cols="12" sm="6" md="3">
         <span style="color: white; padding-left: 15px;"><b>Product</b></span>
         <VList style="background-color: #0F172A; color: #BBC1CA;" :items="items1" />
