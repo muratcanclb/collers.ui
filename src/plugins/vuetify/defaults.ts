@@ -12,7 +12,7 @@ export default {
   },
   VBtn: {
     // set v-btn default color to primary
-    color: 'primary',
+    color: "rgb(120 53 15)",
   },
   VChip: {
     size: 'small',

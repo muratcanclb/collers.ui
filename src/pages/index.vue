@@ -1,25 +1,61 @@
+<script>
+import collectionContent from "../components/CollectionContent/collection-body.vue";
+import feedbackContent from "../components/FeedbackContent/feedback-card-body.vue";
+import footerContent from "../components/FooterContent/footer-content.vue";
+import headerContent from "../components/HeaderContent/header-content-body.vue";
+import joinContent from "../components/JoinContent/join-content-body.vue";
+import mainContent from "../components/MainContent/main-card-body.vue";
+
+export default {
+  components: {
+    headerContent,
+    mainContent,
+    joinContent,
+    feedbackContent,
+    footerContent,
+    collectionContent,
+  },
+  data() {
+    return {
+
+    };
+  }
+}
+</script>
+
 <template>
   <div>
-    <VCard
-      class="mb-6"
-      title="Kick start your project 🚀"
-    >
-      <VCardText>All the best for your new project.</VCardText>
-      <VCardText>
-        Please make sure to read our <a
-          href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-decoration-none"
-        >
-          Template Documentation
-        </a> to understand where to go from here and how to use our template.
-      </VCardText>
-    </VCard>
+    <VRow>
+      <VCol cols="12">
+        <header-content></header-content>
+      </VCol>
+    </VRow>
+    <VRow>
+      <VCol cols="12"><main-content></main-content></VCol>
+    </VRow>
+    <VRow>
+      <VCol cols="12">
+        <join-content></join-content>
+      </VCol>
+    </VRow>
+    <VRow>
+      <VCol cols="12"><feedback-content></feedback-content></VCol>
+    </VRow>
+    <VRow>
+      <VCol cols="12">
+        <collection-content></collection-content>
+      </VCol>
+    </VRow>
+    <VRow>
+      <VCol cols="12" style="background-color: #0F172A;">
+        <footer-content></footer-content>
+      </VCol>
+    </VRow>
 
-    <VCard title="Want to integrate JWT? 🔒">
-      <VCardText>We carefully crafted JWT flow so you can implement JWT with ease and with minimum efforts.</VCardText>
-      <VCardText>Please read our  JWT Documentation to get more out of JWT authentication.</VCardText>
-    </VCard>
   </div>
 </template>
+<style lang="scss">
+.v-row {
+  margin: 0px !important;
+}
+</style>

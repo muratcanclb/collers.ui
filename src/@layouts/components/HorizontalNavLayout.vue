@@ -27,27 +27,23 @@ const { _layoutClasses: layoutClasses, isNavbarBlurEnabled } = useLayouts()
 </script>
 
 <template>
-  <div
-    class="layout-wrapper"
-    :class="layoutClasses(windowWidth, windowScrollY)"
-  >
-    <div
-      class="layout-navbar-and-nav-container"
-      :class="isNavbarBlurEnabled && 'header-blur'"
-    >
+  <div class="layout-wrapper" :class="layoutClasses(windowWidth, windowScrollY)">
+    <div class="layout-navbar-and-nav-container" :class="isNavbarBlurEnabled && 'header-blur'">
       <!-- 👉 Navbar -->
       <div class="layout-navbar">
         <div class="navbar-content-container">
           <slot name="navbar" />
-        </div>
-      </div>
-      <!-- 👉 Navigation -->
-      <div class="layout-horizontal-nav">
-        <div class="horizontal-nav-content-container">
-          <HorizontalNav :nav-items="navItems" />
+          <!-- 👉 Navigation -->
+          <div class="layout-horizontal-nav" style="float: right;">
+            <div class="horizontal-nav-content-container">
+              <HorizontalNav :nav-items="navItems" />
+            </div>
+          </div>
+          <VBtn variant="outlined">Sign Up Now</VBtn>
         </div>
       </div>
     </div>
+
 
     <main class="layout-page-content">
       <template v-if="$slots['content-loading']">
@@ -64,11 +60,7 @@ const { _layoutClasses: layoutClasses, isNavbarBlurEnabled } = useLayouts()
     </main>
 
     <!-- 👉 Footer -->
-    <footer class="layout-footer">
-      <div class="footer-content-container">
-        <slot name="footer" />
-      </div>
-    </footer>
+
   </div>
 </template>
 

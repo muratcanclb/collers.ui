@@ -1,5 +1,5 @@
-import type { VuetifyOptions } from 'vuetify'
 import { themeConfig } from '@themeConfig'
+import type { VuetifyOptions } from 'vuetify'
 
 const theme: VuetifyOptions['theme'] = {
   defaultTheme: localStorage.getItem(`${themeConfig.app.title}-theme`) || themeConfig.app.theme.value,
@@ -7,8 +7,8 @@ const theme: VuetifyOptions['theme'] = {
     light: {
       dark: false,
       colors: {
-        'primary': localStorage.getItem(`${themeConfig.app.title}-lightThemePrimaryColor`) || '#7367F0',
-        'on-primary': '#fff',
+        'primary': '#FFFBEB',
+        'on-primary': '#78350F',
         'secondary': '#A8AAAE',
         'on-secondary': '#fff',
         'success': '#28C76F',

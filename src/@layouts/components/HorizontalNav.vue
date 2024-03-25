@@ -16,12 +16,7 @@ const resolveNavItemComponent = (item: NavLink | NavGroup) => {
 
 <template>
   <ul class="nav-items">
-    <Component
-      :is="resolveNavItemComponent(item)"
-      v-for="(item, index) in navItems"
-      :key="index"
-      :item="item"
-    />
+    <Component :is="resolveNavItemComponent(item)" v-for="(item, index) in navItems" :key="index" :item="item" />
   </ul>
 </template>
 
@@ -30,6 +25,9 @@ const resolveNavItemComponent = (item: NavLink | NavGroup) => {
   .nav-items {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 15px;
   }
 }
 </style>

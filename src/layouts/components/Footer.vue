@@ -1,37 +1,31 @@
 <template>
-  <div class="h-100 d-flex align-center justify-space-between">
+  <div class="d-flex align-center justify-space-between" style="background-color: #0F172A; ">
     <!-- 👉 Footer: left content -->
-    <span class="d-flex align-center">
+    <span style="color: white;" class="d-flex align-center">
       &copy;
-      {{ new Date().getFullYear() }}
-      Made With
-      <VIcon
-        icon="tabler-heart"
-        color="error"
-        size="1.25rem"
-        class="mx-1"
-      />
-      By <a
-        href="https://pixinvent.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-primary ms-1"
-      >Pixinvent</a>
+      Collers @ 2023. All right reserved.
     </span>
     <!-- 👉 Footer: right content -->
     <span class="d-md-flex gap-x-4 text-primary d-none">
       <a
         href="https://themeforest.net/licenses/standard"
         target="noopener noreferrer"
-      >License</a>
+        style="color: white;"
+      >Terms</a>
       <a
         href="https://pixinvent.com/"
         target="noopener noreferrer"
-      >More Themes</a>
+      >Privacy</a>
       <a
         href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/documentation/"
         target="noopener noreferrer"
-      >Documentation</a>
+      >Contact</a>
+      <VIcon
+        icon="tabler-globe"
+        size="1.25rem"
+        class="mx-1"
+        style="color: white;"
+      />EN
     </span>
   </div>
 </template>

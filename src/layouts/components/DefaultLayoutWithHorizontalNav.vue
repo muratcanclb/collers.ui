@@ -5,8 +5,6 @@ import { themeConfig } from '@themeConfig'
 
 // Components
 import Footer from '@/layouts/components/Footer.vue'
-import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
-import UserProfile from '@/layouts/components/UserProfile.vue'
 import { HorizontalNavLayout } from '@layouts'
 import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
 
@@ -25,14 +23,15 @@ const { appRouteTransition } = useThemeConfig()
       >
         <VNodeRenderer :nodes="themeConfig.app.logo" />
 
-        <h1 class="app-title font-weight-bold leading-normal text-xl">
+        <h1 style="color: #78350F;" class="app-title font-weight-bold leading-normal text-xl">
           {{ themeConfig.app.title }}
         </h1>
       </RouterLink>
+      
       <VSpacer />
-
-      <NavbarThemeSwitcher class="me-2" />
-      <UserProfile />
+      
+      <!-- <NavbarThemeSwitcher class="me-2" />-->
+      
     </template>
 
     <!-- 👉 Pages -->

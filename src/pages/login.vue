@@ -124,6 +124,7 @@ const rememberMe = ref(false)
                 <VBtn
                   block
                   type="submit"
+                  variant="outlined"
                 >
                   Login
                 </VBtn>
