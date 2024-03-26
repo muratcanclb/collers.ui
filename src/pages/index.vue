@@ -51,11 +51,15 @@ export default {
         <footer-content></footer-content>
       </VCol>
     </VRow>
-
   </div>
 </template>
 <style lang="scss">
 .v-row {
   margin: 0px !important;
+}
+
+.v-col {
+  padding: 0px;
+  margin-top: 3px;
 }
 </style>

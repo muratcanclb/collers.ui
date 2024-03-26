@@ -9,8 +9,8 @@ const items3 = ['Contact Us', 'Developers', 'Documentation', 'Integrations', 'Re
 <template>
   <div>
     <VRow>
-      <VCol cols="12" sm="6" md="3">
-        <span style="color: white; padding-left: 15px;"><b>Product</b></span>
+      <VCol cols="12" sm="6" md="3" style="padding-left: 5%;">
+        <span style="color: white; padding-left: 5%;"><b>Product</b></span>
         <VList style="background-color: #0F172A; color: #BBC1CA;" :items="items1" />
       </VCol>
       <VCol cols="12" sm="6" md="3">
@@ -45,16 +45,16 @@ const items3 = ['Contact Us', 'Developers', 'Documentation', 'Integrations', 'Re
         </VRow>
       </VCol>
     </VRow>
-    <VRow>
-      <VCol>
+    <VRow justify="center">
+      <VCol cols="12" sm="6" md="11" lg="11">
         <div class="line"></div>
       </VCol>
     </VRow>
     <VRow>
       
-      <VCol cols="12" sm="6"> <span style="color: white;">Collers @ 2023. All rights reserved.</span></VCol>
+      <VCol cols="12" sm="6"> <span style="color: white; margin-left: 50px;">Collers @ 2023. All rights reserved.</span></VCol>
       <VCol cols="12" sm="6">
-       <div style="float: right;">
+       <div style="float: right; margin-right: 50px;">
         <span style="color: white; margin: 10px;">Terms</span>
         <span style="color: white; margin: 10px;">Privacy</span>
         <span style="color: white; margin: 10px;">Contact</span>
@@ -65,12 +65,14 @@ const items3 = ['Contact Us', 'Developers', 'Documentation', 'Integrations', 'Re
   </div>
 </template>
 
-<style>
+<style scoped>
 .line {
   width: 100%;
   height: 2px;
+  text-align: center;
   /* Çizgi kalınlığı */
   background-color: #2A364A;
   /* Çizgi rengi */
 }
+
 </style>
