@@ -1,7 +1,7 @@
 ## `Collers UI`
 [live preview](https://collers-ui-git-main-murat-can-celebis-projects.vercel.app/)
 
-<img src="https://github.com/muratcanclb/b.cases/blob/main/collers.ui/public/collersView.png">
+<img src="https://github.com/muratcanclb/collers.ui/tree/main/src/assets/images/banner.png">
 
 
 ## Project setup
